@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tien Do's home page</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+
+
+<body>
+    <div class="wrapper">
+
+        <div class=profile_pic>
+            <img src="images/profile_pic_medium.png"  height=auto width=80%>
+        </div>
+        <div class=profile_text>
+            <strong style="font-size:2.3em;color:#880000;"> Tien Do </strong> <!-- (&#272;&#7895; Ti&#7871;n) -->            
+            <br>
+            <strong style="font-size:1em;color:black;"> Computer Science and Engineering </strong>
+            <br>
+            <strong style="font-size:1em;color:black;"> University of Minnesota </strong>
+            <br>
+<!--            <a href="doxxx104@umn.edu"> Email</a> |-->
+            <a href="assets/cv/TienDo_CV.pdf"> CV</a> |
+            <a href="https://scholar.google.com/citations?hl=en&user=T3agBhcAAAAJ"> Google Scholar</a>
+        </div>
+
+
+        <h2>About</h2>
+        <div class="text" style="margin-left: 0; width:90%;">
+            I'm a PhD candidate at the CS&E department, University of Minnesota, where
+            I'm advised by Prof. <a href="https://www-users.cs.umn.edu/~stergios/"> Stergios I. Roumeliotis</a> and
+            Prof. <a href="https://www-users.cs.umn.edu/~hspark/"> Hyun Soo Park</a>.
+            <br>
+            <br>
+            My research interests include resource-constrained localization, navigation, and scene reconstruction.
+        </div>
+
+        <br>
+
+        <h2>Publications </h2>
+        <div class="year"> <strong> 2022 </strong> </div>
+        <br>
+
+        <div class=paper>
+            <span><strong> Learning to Detect Scene Landmarks for Camera Localization </strong></span> <br>
+            <div style="font-size: 0.8em;">
+                <u>Tien Do</u>, Ondrej Miksik, Joseph Degol, Hyun Soo Park, and Sudipta N. Sinha <br>
+                <span class=conference> Computer Vision and Pattern Recognition (CVPR) </span>&nbsp;<strong style="color: orangered;"> Oral Presentation </strong><br>
+                <a href="assets/media/cvpr22_scene_landmarks/FINAL.pdf">paper</a> |
+                <a href="https://github.com/microsoft/SceneLandmarkLocalization">code</a> |
+                <a href="https://drive.google.com/drive/folders/1nTAiDbQzhT3WI6Cvj0MdRv2MTcB0t3hw">dataset</a>
+            </div>
+            <br>
+            <div class=summary_paper>
+                Learning to predict 2D-3D correspondences directly without 2D-2D image matching, for
+                both visible and invisible landmarks. Camera pose is then determined by a robust PnP solver.
+            </div>
+        </div>
+        <div class=summary_figure>
+            <img src="assets/media/cvpr22_scene_landmarks/summary_figure.png" width=100%>
+        </div>
+
+        <br><br>
+
+        <div class=paper>
+            <span><strong> Egocentric Scene Understanding via Multimodal Spatial Rectifier </strong></span><br>
+            <div style="font-size: 0.8em;">
+                <u>Tien Do</u>, Khiem Vuong, and Hyun Soo Park <br>
+                <span class=conference> Computer Vision and Pattern Recognition (CVPR) </span>&nbsp;<strong style="color: orangered;"> Oral Presentation </strong><br>
+                <a href="assets/media/cvpr22_egodepth/FINAL.pdf">paper</a> |
+                <a href="https://github.com/tien-d/EgoDepthNormal">code</a> |
+                <a href="https://github.com/tien-d/EgoDepthNormal">dataset</a>
+            </div>
+            <br>
+            <div class=summary_paper>
+                Extension of the <a href="#spatial_rectifier_eccv20">spatial rectifier</a> to the
+                multi-directional case, applying to depth and surface normal prediction from egocentric view.
+            </div>
+        </div>
+        <div class=summary_figure>
+            <img src="assets/media/cvpr22_egodepth/edina_cluster_crop_small.png" width=100%>
+        </div>
+
+        <br><br>
+
+        <div class="year"> <strong> 2021 </strong> </div>
+        <br>
+        <div class=paper>
+            <span><strong> Deep Multi-view Depth Estimation with Predicted Uncertainty</strong> </span> <br>
+            <div style="font-size: 0.8em;">            
+                Tong Ke, <u>Tien Do</u>, Khiem Vuong, Kourosh Sartipi, and Stergios I. Roumeliotis <br>
+                <span class=conference> International Conference on Robotics and Automation (ICRA) </span><br>
+                <a href="https://arxiv.org/pdf/2011.09594.pdf"> paper</a> |
+                <a href="https://github.com/MARSLab-UMN/DeepMultiviewDepth"> code</a>
+            </div>
+            <br>
+            <div class=summary_paper>
+                Depth estimation by multiple-view triangulation, follow by an iterative depth refinement that
+                preserves estimates with high triangulation confidence.
+            </div>
+        </div>
+        <div class=summary_figure>
+            <img src="assets/media/icra21_multiview_depth/summary_figure.png" width=100%>
+        </div>
+
+
+        <br><br>
+
+        <div class="year"> <strong> 2020 </strong> </div>
+        <br>
+        <div class=paper>
+            <span><strong> Deep Depth Estimation from Visual-Inertial SLAM </strong></span> <br>
+            <div style="font-size: 0.8em;">
+                Kourosh Sartipi, <u>Tien Do</u>, Tong Ke, Khiem Vuong, and Stergios I. Roumeliotis <br>
+                <span class=conference>International Conference on Intelligent Robots and Systems (IROS)</span><br>
+                <a href="https://arxiv.org/pdf/2008.00092.pdf"> paper</a> |
+                <a href="https://github.com/MARSLab-UMN/vi_depth_completion"> code</a> 
+                <br><br>
+            </div>
+            <div class=summary_paper>
+                Depth estimation by completing a very sparse VI-SLAM point cloud using planar constraint from <a
+                    href="#spatial_rectifier_eccv20">robust surface normal prediction</a> .
+            </div>
+        </div>
+        <div class=summary_figure>
+            <img src="assets/media/iros20_deep_depth/summary_figure.png" width=100%>
+        </div>
+
+
+        <br>
+        <a id="spatial_rectifier_eccv20" style="background-color:transparent ;"> </a>
+        <br>
+        
+
+        <div class=paper>
+            <span><strong> Surface Normal Estimation of Tilted Images via Spatial Rectifier </strong></span> <br>
+            <div style="font-size: 0.8em;">
+                <u> Tien Do</u>, Khiem Vuong, Stergios I. Roumeliotis, and Hyun Soo Park <br>            
+                <span class=conference>European Conference on Computer Vision (ECCV) </span> <strong style="color: orangered;"> Spotlight Presentation </strong> <br>
+                <a href="https://arxiv.org/pdf/2007.09264.pdf"> paper</a> |
+                <a href="https://github.com/MARSLab-UMN/TiltedImageSurfaceNormal"> code</a> |
+                <a href="https://www.khiemvuong.com/TiltedImageSurfaceNormal/">website</a> <br>
+                <br>                
+            </div>
+            <div class=summary_paper>
+                    Robust surface normal estimation by spatially rectifying image to the densely distributed orientations.
+            </div>
+        </div>
+        <div class=summary_figure>
+            <img src="assets/media/eccv20_surface_normal/summary_figure.png" width=100%>
+        </div>
+
+
+        <br><br>
+
+        <div class="year"> <strong> 2019 </strong> </div> <br>
+
+        <div class=paper>
+            <span><strong> Attitude Tracking from a Camera and an Accelerometer on Gyro-less Devices </strong></span> <br>
+            <div style="font-size: 0.8em;">
+                <u> Tien Do</u>, Leo Neira, Yang Yang, and Stergios I. Roumeliotis <br>            
+                <span class=conference>International Symposium on Robotics Research (ISRR)</span><br>
+                <a href="http://mars.cs.umn.edu/papers/ISRR19_0045_FI.pdf"> paper</a> <br>
+                <br>                
+            </div>
+            <div class=summary_paper>
+                Tracking attitude without gyroscope at 30Hz by relaxing the scale consistent estimate of a
+                VI-SLAM. Roll, pitch, gyro and accel biases are all observable.
+            </div>
+        </div>
+        <div class=summary_figure>
+            <img src="assets/media/isrr19_3d_att_est/summary_figure.png" width=100%>
+        </div>
+
+        <br><br>
+
+        <div class=paper>
+            <span><strong> High-speed Autonomous Quadrotor Navigation through Visual and Inertial Paths </strong></span> <br>
+            <div style="font-size: 0.8em;">
+                <u> Tien Do</u>, Luis C. Carrillo-Arce, and Stergios I. Roumeliotis <br>
+                <span class=journal><strong>International Journal of Robotics Research (IJRR)</strong></span><br>
+                <a href="http://mars.cs.umn.edu/papers/DCR_IJRR.pdf"> paper</a> |
+                <a href="http://mars.cs.umn.edu/research/quadrotor_project.php">website</a> <br>
+                <br>
+            </div>
+            <div class=summary_paper>
+                Quadrotor navigation in a topological map represented as a
+                graph with nodes as images and edges as 2D feature correspondences.  
+            </div>
+        </div>        
+        <div class=summary_figure>
+            <img src="assets/media/ijrr19_quad_nav/summary_figure.png" width=100%>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+</body>
+</html>

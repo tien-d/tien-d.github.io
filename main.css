@@ -1,0 +1,195 @@
+/*body {*/
+/*    font-family: 'Lato';*/
+/*}*/
+
+
+body {
+  background-color: white;
+  font-family: 'Lato';
+}
+
+div.wrapper {
+        max-width: 20000px;
+        width: 960px;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+    }
+
+div.paper {
+    display: inline-block;
+    font-size: 1em;
+    vertical-align: top;
+    width: 55%;
+}
+
+div.summary_figure {
+    display: inline-block;
+    width: 40%;
+    margin-left: 4%;
+}
+
+div.profile_text{
+    display:inline-block;
+    margin-left: 0;
+    width: 50%;
+}
+
+div.profile_pic{
+    display:inline-block;
+    vertical-align:top;
+    height:auto;
+    width:12%;"
+}
+
+@media screen and (max-width: 992px) {
+
+    div.wrapper {
+        max-width: 20000px;
+        width: 80%;
+        margin-top: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        align-content: center;
+    }
+
+    div.paper {
+        display: inline-block;
+        font-size: 1em;
+        vertical-align: top;
+        width: 55%;
+    }
+
+    div.summary_figure {
+        display: inline-block;
+        width: 40%;
+        margin-left: 4%;
+    }
+
+    div.profile_text{
+        display:inline-block;
+        margin-left: 0;
+        width: 50%;
+        font-size:0.8em;
+    }
+
+    div.profile_pic{
+        display:inline-block;
+        vertical-align:top;
+        height:auto;
+        width:20%;"
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+
+    div.wrapper {
+        max-width: 20000px;
+        width: 90%;
+        margin-top: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        align-content: center;
+    }
+
+    div.paper{
+        display:inline-block;
+        font-size: 1em;
+        vertical-align:top;
+        width:100%;
+    }
+
+    div.summary_figure{
+        display:inline-block;
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+
+
+    div.profile_text{
+        display:inline-block;
+        margin-left: 0;
+        width: 80%;
+        font-size:0.8em;
+    }
+
+    div.profile_pic{
+        display:inline-block;
+        vertical-align:top;
+        height:auto;
+        width:18%;"
+    }
+}
+
+div.summary_paper{
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+
+h1 {
+    color: #880000;
+}
+h2 {
+    color: #880000;
+}
+
+div.year {
+    background-color:lightgray;
+    height: 1.0em;
+    line-height: 1.0em;
+    width: 100%;
+    font-size: 0.8em;
+    padding: 2px 0;
+}
+
+span {
+    display: inline-block;
+    padding: 0px;
+    font-size: 1.0em;
+    margin-bottom: 5px;
+}
+
+span.conference {
+    display: inline-block;
+    color: darkolivegreen;
+    margin-bottom:0px;
+}
+
+span.journal {
+    display: inline-block;
+    color: coral;
+    margin-bottom:0px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* unvisited link */
+a:link {
+  color: #0F90DF;
+}
+
+/* visited link */
+a:visited {
+  color: #0F90DF;
+}
+
+/* mouse over link */
+a:hover {
+  background-color: lightcyan;
+  color: #16495E;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
