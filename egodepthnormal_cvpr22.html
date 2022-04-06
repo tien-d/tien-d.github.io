@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Egocentric Scene Understanding via Multimodal Spatial Rectifier</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+
+    <script src='https://kit.fontawesome.com/b7a33894f0.js' crossorigin='anonymous'></script>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="text">
+            <br>
+            <DIV STYLE="background-color:lightgray; height:4px; width:100%;"> </DIV>
+            <br>
+            <strong style="font-size:45px;color:#880000;"> Egocentric Scene Understanding via Multimodal Spatial Rectifier </strong> <!-- (&#272;&#7895; Ti&#7871;n) -->
+            <br>
+            <br>
+            <DIV STYLE="background-color:lightgray; height:4px; width:100%;"> </DIV>
+            <br>
+            <div style="margin-left: 5%; margin-right: auto; font-size:22px;color:black;
+            vertical-align:top;
+            width: 45%;">
+                <a href="https://tien-d.github.io">Tien Do</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <a href="https://www.khiemvuong.com">Khiem Vuong</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <a href="https://www-users.cse.umn.edu/~hspark/">Hyun Soo Park</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <br><br>
+                University of Minnesota
+            </div>
+
+            <br><br>
+
+            <h1>Abstract</h1>
+        <div class="text" style="text-align: justify;margin-left: 5%; width:90%; font-size:18px;">
+            In this paper, we study a problem of egocentric scene understanding, i.e., predicting depths and surface
+            normals from an egocentric image. Egocentric scene understanding poses unprecedented challenges:
+            (1) due to large head movements, the images are taken from non-canonical viewpoints (i.e., tilted images)
+            where existing models of geometry prediction do not apply;
+            (2) dynamic foreground objects including hands constitute a large proportion of visual scenes.
+            These challenges limit the performance of the existing models learned from large indoor datasets, such as
+            ScanNet and NYUv2, which comprise predominantly upright images of static scenes. We present a
+            multimodal spatial rectifier that stabilizes the egocentric images to a set of reference directions,
+            which allows learning a coherent visual representation. Unlike unimodal spatial rectifier that often produces
+            excessive perspective warp for egocentric images, the multimodal spatial rectifier learns from multiple directions
+            that can minimize the impact of the perspective warp. To learn visual representations of the dynamic foreground objects,
+            we present a new dataset called EDINA (Egocentric Depth on everyday INdoor Activities) that comprises more than
+            500K synchronized RGBD frames and gravity directions. Equipped with the multimodal spatial rectifier and
+            the EDINA dataset, our proposed method on single-view depth and surface normal estimation significantly outperforms
+            the baselines not only on our EDINA dataset, but also on other popular egocentric datasets, such as
+            First Person Hand Action (FPHA) and EPIC-KITCHENS.
+        </div>
+
+        <h1>Video</h1>
+        <div class="video">
+          <div style="margin-left: 5%;" class="video-container">
+            <iframe
+                    src="https://www.youtube.com/embed/bLp9jYLQD-Q" width=600 height="300"allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+
+        <h1>Egocentric Depth on everyday INdoor Activities (EDINA) Dataset</h1>
+<!--        <div style="margin-left: 2em;" class="nospace">-->
+<!--		<img src="assets/images/edina1.gif" style="width: 70%; height: auto;">-->
+<!--        </div>-->
+        <div style="margin-left: 5%;" class="nospace">
+		<img src="assets/images/edina2.gif" style="width: 70%; height: auto;">
+        </div>
+
+        <h1>More results on EPIC-KITCHENS</h1>
+        <br>
+        <div style="margin-left: 5%;" class="nospace">
+            <video width=70% controls>
+                <source src="assets/media/cvpr22_egodepth/P05_01.mp4" type="video/mp4">
+            </video>
+            <h4>P05_01</h4>
+            <br>
+
+            <video width=70% controls>
+                <source src="assets/media/cvpr22_egodepth/P06_01.mp4" type="video/mp4">
+            </video>
+            <h4>P06_01</h4>
+            <br>
+
+            <video width=70% controls>
+                <source src="assets/media/cvpr22_egodepth/P07_01.mp4" type="video/mp4">
+            </video>
+            <h4>P07_01</h4>
+            <br>
+
+            <video width=70% controls>
+                <source src="assets/media/cvpr22_egodepth/P08_01.mp4" type="video/mp4">
+            </video>
+            <h4>P08_01</h4>
+            <br>
+        </div>
+
+        <h1>Bibtex</h1>
+<div style="margin-left: 2em; width:80%; font-size:18px;">
+<textarea id="bibtex" class="form-control" rows=10 cols=120 readonly wrap="hard"  style="border:none;outline:none">
+@InProceedings{Do_2022_EgoSceneMSR,
+    author     = {Do, Tien and Vuong, Khiem and Park, Hyun Soo},
+    title      = {Egocentric Scene Understanding via Multimodal Spatial Rectifier},
+    booktitle  = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month      = {June},
+    year       = {2022}
+}
+</textarea>
+</div>
+
+<!--            <div style="margin-left: 10%; margin-right: auto; font-size:22px;color:black;">-->
+<!--                <div class="icon-elem-parent" style="display:inline-block;">-->
+<!--                    <a href="https://github.com/MARSLab-UMN/TiltedImageSurfaceNormal" target="_blank"><div-->
+<!--                        class="icon-elem fa-solid fa-file-pdf fa-3x"></div></a>-->
+<!--                <div class="icon-txt">Paper</div>-->
+<!--                </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+
+<!--                <div class="icon-elem-parent" style="display:inline-block; vertical-align:top;">-->
+<!--                    <a href="https://github.com/MARSLab-UMN/TiltedImageSurfaceNormal"><div-->
+<!--                        class="icon-elem fa-brands fa-github-square fa-3x"></div></a>-->
+<!--                <div class="icon-txt">Code&nbsp;</div>-->
+<!--                </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+
+<!--                <div class="icon-elem-parent" style="display:inline-block; vertical-align:top;">-->
+<!--                    <a href="https://github.com/MARSLab-UMN/TiltedImageSurfaceNormal" target="_blank"><div-->
+<!--                        class="icon-elem fa fa-database fa-3x"></div></a>-->
+<!--                    <div class="icon-txt">Data&nbsp;</div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+
+
+    </div>
+
+</body>
+</html>
