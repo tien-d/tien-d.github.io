@@ -190,6 +190,21 @@ a:hover {
 }
 
 /* selected link */
-a:active {
-  color: blue;
+a.icon:active {
+  color: black;
+}
+
+a.icon:link {
+  color: black;
+}
+
+/* visited link */
+a.icon:visited {
+  color: #0F90DF;
+}
+
+/* mouse over link */
+a.icon:hover {
+  background-color: lightcyan;
+  color: #16495E;
 }
